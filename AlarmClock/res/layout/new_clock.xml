@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:layout_gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/top_cancel"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="4" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" 
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/top_ok"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="4" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dip"
+			android:background="@android:color/white" />
+		
+	    <TimePicker
+	        android:id="@+id/clock"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal" />
+	    
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.5dip"
+			android:background="@android:color/white" />
+		
+	    <LinearLayout
+	        android:id="@+id/ll_repeat"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dip"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:weightSum="10" >
+	
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="4.2"
+	            android:gravity="center_vertical|left"
+	            android:text="@string/repeat_text"
+	            android:textColor="@android:color/white"
+	            android:textSize="15sp" />
+	
+	        <TextView
+	            android:id="@+id/tv_repeat"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="center_vertical|right"
+	            android:layout_marginRight="8dip"
+	            android:textColor="@android:color/white"
+	            android:textSize="15sp" />
+	
+	        <ImageView
+	            android:layout_width="match_parent"
+	            android:layout_height="25dip"
+	            android:scaleType="fitCenter"
+	            android:layout_weight="4.8"
+	        	android:layout_gravity="center_vertical"
+	            android:src="@drawable/right_w" />
+	
+	    </LinearLayout>
+	 
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.5dip"
+			android:background="@android:color/white" />
+		 
+	    <LinearLayout
+	       android:id="@+id/ll_bell"
+	       android:layout_width="match_parent"
+	       android:layout_height="45dip"
+	       android:orientation="horizontal"
+	       android:layout_marginLeft="10dip"
+	       android:layout_marginRight="10dip"
+	       android:weightSum="10" >
+	
+	       <TextView
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_weight="4.2"
+	           android:gravity="center_vertical|left"
+	           android:text="@string/bell_text"
+	           android:textColor="@android:color/white"
+	           android:textSize="15sp" />
+	
+	       <TextView
+	           android:id="@+id/tv_bell"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_weight="1"
+	           android:gravity="center_vertical|right"
+	           android:layout_marginRight="8dip"
+	           android:textColor="@android:color/white"
+	           android:textSize="15sp" />
+	
+	       <ImageView
+	           android:layout_width="match_parent"
+	           android:layout_height="25dip"
+	           android:scaleType="fitCenter"
+	           android:layout_weight="4.8"
+	       	   android:layout_gravity="center_vertical"
+	           android:src="@drawable/right_w" />
+	
+	   </LinearLayout>
+	   
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.5dip"
+			android:background="@android:color/white" />
+		 
+	    <LinearLayout
+	       android:id="@+id/ll_vibration"
+	       android:layout_width="match_parent"
+	       android:layout_height="45dip"
+	       android:orientation="horizontal"
+	       android:layout_marginLeft="10dip"
+	       android:layout_marginRight="10dip"
+	       android:weightSum="10" >
+	
+	       <TextView
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_weight="2.5"
+	           android:gravity="center_vertical|left"
+	           android:text="@string/vibration_text"
+	           android:textColor="@android:color/white"
+	           android:textSize="15sp" />
+	
+	       <CheckBox
+	           android:id="@+id/cb_offon"
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_weight="7.5"
+	           android:button="@drawable/check_box"
+	           android:layout_gravity="center_vertical" />
+	
+	   </LinearLayout>
+	   
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.5dip"
+			android:background="@android:color/white" />
+		 
+	    <LinearLayout
+	       android:id="@+id/ll_label"
+	       android:layout_width="match_parent"
+	       android:layout_height="45dip"
+	       android:orientation="horizontal"
+	       android:layout_marginLeft="10dip"
+	       android:layout_marginRight="10dip"
+	       android:weightSum="10" >
+	
+	       <TextView
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_weight="4.2"
+	           android:gravity="center_vertical|left"
+	           android:text="@string/label_text"
+	           android:textColor="@android:color/white"
+	           android:textSize="15sp" />
+	
+	       <TextView
+	           android:id="@+id/tv_label"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_weight="1"
+	           android:gravity="center_vertical|right"
+	           android:layout_marginRight="8dip"
+	           android:textColor="@android:color/white"
+	           android:textSize="15sp" />
+	
+	       <ImageView
+	           android:layout_width="match_parent"
+	           android:layout_height="25dip"
+	           android:scaleType="fitCenter"
+	           android:layout_weight="4.8"
+	       	   android:layout_gravity="center_vertical"
+	           android:src="@drawable/right_w" />
+	   </LinearLayout>
+	   
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.5dip"
+			android:background="@android:color/white" />
+		
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="bottom">
+		<Button
+		    android:id="@+id/bt_del"
+		    android:layout_width="match_parent"
+		    android:layout_height="50dip"
+		    android:layout_marginLeft="20dip"
+		    android:layout_marginRight="20dip"
+		    android:layout_marginBottom="10dip"
+		    android:background="@drawable/button_back"
+		    android:textColor="#FF0000"
+		    android:text="@string/del_clock" />
+		</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Super闹钟</string>
+    <string name="action_add">新建闹钟</string>
+    <string name="action_del">删除所有闹钟</string>
+    <string name="action_settings">设置</string>
+    <string name="action_about">关于</string>
+    <string name="action_suggest">建议反馈</string>
+    
+    <string name="about_content">\t\tSupter闹钟是一款非常有趣的闹钟。本闹钟和其他闹钟的不同在于独特的取消闹钟的方法，非常适合爱赖床的朋友使用。
+        \n\n取消闹钟的三种方式：\n\t\t1、做算术题。闹钟响的同时会随机产生算术题，只有做对了指定的题才能取消闹钟，做题次数可自定义。
+        \n\t\t2、摇晃手机。根据摇晃手机的力度判断清醒程度，清醒程度达到100%取消闹钟，摇晃手机灵敏度可在设置里设置。
+        \n\t\t3、三根手指同时下滑。个别手机摇晃反应不是很好，若设置为摇晃模式，取消不了闹钟，所以设置这个隐藏的取消闹铃方法。
+        \n\n\t\t您有什么建议或问题可以通过“建议反馈”菜单和小苏在QQ上交流，谢谢！</string>
+    
+    <!-- 新建界面 -->
+
+    <string name="top_cancel">×</string>
+    <string name="top_ok">✔</string>
+    <string name="repeat_text">重复</string>
+    <string name="bell_text">铃声</string>
+    <string name="vibration_text">震动</string>
+    <string name="label_text">标签</string>
+    <string name="del_clock">删除闹钟</string>
+    
+    <!-- 选择铃声 -->
+    <string name="bell">铃声</string>
+    <string name="muisc">音乐</string>
+
+    <!-- 设置界面 -->
+    <string name="bell_mode">静音模式闹钟响铃</string>
+    <string name="bell_mode_tip">手机处于静音模式时，闹钟仍会响铃</string>
+    <string name="cancel_alarm_mode">解除闹钟模式</string>
+    <string name="cancel_alarm_tip1">摇动手机，解除闹钟</string>
+    <string name="cancel_alarm_tip2">做算术题解除闹钟</string>
+    <string name="num_time">解题次数</string>
+    <string name="num_time_tip">3(默认)</string>
+    <string name="shake_title">摇晃手机灵敏度</string>
+      <string name="fead_back">意见反馈</string>
+    <string name="shake_tip">轻轻摇</string>
+    <string name="exit_app">再按一次退出</string>
+    
+</resources>

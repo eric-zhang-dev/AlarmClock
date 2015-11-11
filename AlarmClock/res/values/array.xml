@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="repeat_item">
+        <item>只响一次</item>
+        <item>周一到周五</item>
+        <item>每天</item>
+    </string-array>
+    
+    <string-array name="cancel_bell_mode">
+        <item>解题解除闹铃</item>
+        <item>摇晃手机解除闹铃</item>
+    </string-array>
+    
+    <string-array name="shake_item">
+        <item>轻轻摇</item>
+        <item>用力摇</item>
+        <item>爆力摇</item>
+    </string-array>
+</resources>

@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dian_tong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="电筒"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="@android:color/white" />
+
+    <ListView
+        android:id="@+id/lv_clocks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ib_add"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/oval_button_selector"
+            android:contentDescription="@string/action_add"
+            android:src="@drawable/add_alarm"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/ib_setting"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/oval_button_selector"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/setting" />
+    </LinearLayout>
+
+</LinearLayout>

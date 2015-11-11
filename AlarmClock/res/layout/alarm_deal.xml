@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/ll_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+	    <TextView
+	        android:id="@+id/tv_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dip"
+	        android:layout_marginLeft="5dip"
+	        android:layout_marginRight="5dip"
+	        android:layout_marginBottom="5dip"
+	        android:textColor="@android:color/white"
+	        android:textSize="@dimen/info_size" />
+	    <TextView
+	        android:id="@+id/tv_tip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FF0000"
+	        android:textSize="@dimen/tip_size" />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="60dip"
+	        android:orientation="horizontal"
+	        android:gravity="center_horizontal"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip" >  
+		    <TextView
+		        android:id="@+id/tv_num"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:textColor="@android:color/white"
+		        android:gravity="center_vertical|top"
+		        android:layout_weight="0.3"
+		        android:textSize="@dimen/num_size" />
+		    
+	        <EditText
+	            android:id="@+id/et_result"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/input_back"
+	            android:gravity="center_vertical"
+	            android:inputType="number"
+	            android:layout_weight="0.7"
+	            android:textSize="@dimen/result_size" />
+	    </LinearLayout> 
+    
+        <GridView
+            android:id="@+id/gv_nums"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="45dip"
+            android:layout_marginRight="45dip"
+            android:columnWidth="70dip"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dip"
+            android:horizontalSpacing="1dip"
+            android:listSelector="#00000000"
+            android:gravity="center"
+            android:numColumns="3" >
+        </GridView>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_shake"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:orientation="vertical" >		
+		<TextView 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_marginTop="20dip"
+		    android:layout_marginBottom="20dip"
+		    android:layout_marginLeft="5dip"
+		    android:layout_marginRight="5dip"
+		    android:textColor="@android:color/white"
+		    android:textSize="@dimen/info_size" />
+		<TextView 
+		    android:id="@+id/tv_test"
+		    android:layout_height="match_parent"
+		    android:layout_width="wrap_content"
+   		    android:layout_marginTop="20dip"
+		    android:layout_marginBottom="20dip"
+		    android:layout_marginLeft="5dip"
+		    android:layout_marginRight="5dip"
+		    android:textColor="@android:color/white"
+		    android:textSize="@dimen/test_size" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

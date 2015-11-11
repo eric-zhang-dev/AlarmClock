@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- 字体大小 -->
+    <dimen name="info_size">37.5sp</dimen>
+    <dimen name="tip_size">30sp</dimen>
+    <dimen name="num_size">75sp</dimen>
+    <dimen name="result_size">60sp</dimen>
+    <dimen name="test_size">52.5sp</dimen>
+
+</resources>
