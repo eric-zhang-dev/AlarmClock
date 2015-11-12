@@ -2,7 +2,6 @@ package com.baby.sp.activity;
 
 import java.util.List;
 
-import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
@@ -27,8 +26,11 @@ import com.baby.sp.R;
 import com.baby.sp.common.Alarm;
 import com.baby.sp.common.AlarmClockManager;
 import com.baby.sp.common.AlarmHandle;
+import com.umeng.socialize.bean.SHARE_MEDIA;
+import com.umeng.socialize.bean.SocializeEntity;
+import com.umeng.socialize.controller.listener.SocializeListeners.SocializeClientListener;
 
-public class MainActivity extends Activity implements OnClickListener {
+public class MainActivity extends BaseActivity implements OnClickListener {
 
 	private Context context;
 	private final static String TAG = "MainActivity";
@@ -53,6 +55,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	// 初始化
 	private void init() {
 		// 初始化按钮并添加onClick时间
+		findViewById(R.id.logout).setOnClickListener(this);
 		findViewById(R.id.ib_add).setOnClickListener(this);
 		findViewById(R.id.ib_setting).setOnClickListener(this);
 		mTextView = (TextView) findViewById(R.id.dian_tong);
@@ -224,8 +227,33 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.dian_tong:
 			startActivity(new Intent(this, LightActivity.class));
 			break;
+		case R.id.logout:
+			logOut(SHARE_MEDIA.SINA);
+			logOut(SHARE_MEDIA.QQ);
+			System.exit(0);
+			break;
 		}
 
+	}
+
+	private void logOut(final SHARE_MEDIA platform) {
+		mController.deleteOauth(MainActivity.this, platform,
+				new SocializeClientListener() {
+					@Override
+					public void onStart() {
+					}
+
+					@Override
+					public void onComplete(int status, SocializeEntity entity) {
+						if (status == 200) {
+							Toast.makeText(MainActivity.this, "删除成功.",
+									Toast.LENGTH_SHORT).show();
+						} else {
+							Toast.makeText(MainActivity.this, "删除失败",
+									Toast.LENGTH_SHORT).show();
+						}
+					}
+				});
 	}
 
 	/*

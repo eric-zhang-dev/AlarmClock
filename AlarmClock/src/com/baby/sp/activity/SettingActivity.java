@@ -142,7 +142,7 @@ public class SettingActivity extends Activity implements View.OnClickListener{
 			showDialog(SHOW_SHAKE_ITEM);
 			break;
 			case R.id.feed_back:
-				mTencent.startWPAConversation(SettingActivity.this,"1585210845", "美女，你好！");
+//				mTencent.startWPAConversation(SettingActivity.this,"1585210845", "美女，你好！");
 				break;
 		}
 	}
